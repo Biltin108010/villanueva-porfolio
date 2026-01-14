@@ -1,15 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+  --font-sans: "Montserrat", "Space Grotesk", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+:root {
+  color: #f6f7fb;
+  background-color: #050505;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  @apply min-h-screen font-sans antialiased text-base leading-7 text-slate-100;
+  background:
+    radial-gradient(circle at 10% 20%, #15151c, transparent 22%),
+    radial-gradient(circle at 82% 8%, #101019, transparent 20%),
+    radial-gradient(circle at 88% 72%, rgba(244, 212, 58, 0.16), transparent 32%),
+    linear-gradient(130deg, #050505 0%, #0a0a0f 48%, #070708 100%);
+  color-scheme: dark;
+}
+
+a {
+  @apply transition-colors;
+}
+
+::selection {
+  background: rgba(244, 212, 58, 0.25);
+  color: #fefefe;
 }
