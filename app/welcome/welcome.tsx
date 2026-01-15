@@ -20,6 +20,7 @@ const projects = [
       "Built to be intuitive for busy school staff with minimal onboarding",
     ],
     images: [acadEaseMain, acadEaseSchedule, acadEaseAI, acadEaseLogin],
+    link: "https://gravatar.com/acadeasedev",
   },
   {
     title: "Tori · Multi-User Inventory & POS",
